@@ -6,7 +6,7 @@ var middleware = require('./middleware')
 //   res.send('hello Express!');
 // });
 
-// function everytime it hits and so far it's print console
+// function everytime it hits and so far it only print console
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAuthentication, function(req, res) {
